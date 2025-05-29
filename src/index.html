@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berbagi Cerita - Story Sharing App</title>
+    <title>Berbagi Cerita - Offline dengan IndexedDB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3f51b5">
 
 </head>
 
@@ -35,12 +37,34 @@
         </nav>
     </header>
 
+    <section id="add-story-section">
+      <h2>Tambah Cerita</h2>
+      <form id="addStoryForm">
+        <input type="text" name="title" placeholder="Judul Cerita" required />
+        <textarea name="content" rows="4" placeholder="Isi cerita..." required></textarea>
+        <button type="submit">Simpan Cerita</button>
+      </form>
+    </section>
+
+
+    <section id="story-list-section">
+      <h2>Daftar Cerita</h2>
+      <div id="storyList"></div>
+    </section>
+    
+    <div class="notification-buttons action-buttons">
+        <button id="install-btn" style="display: none;">
+            Add to Home Screen
+        </button>
+        <button id="btn-subscribe">🔔 Aktifkan Notifikasi</button>
+        <button id="btn-unsubscribe">🔕 Nonaktifkan Notifikasi</button>
+    </div>
+
     <main id="main-content" role="main">
     </main>
 
     <div id="loading" style="display: none;">
         <div class="spinner"></div>
-        <p>Memuat...</p>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

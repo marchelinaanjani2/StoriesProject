@@ -8,7 +8,7 @@ const HomePage = {
       <div class="hero">
         <h1>Berbagi Cerita</h1>
         <p>Platform untuk berbagi pengalaman dan cerita menarik dari berbagai tempat di dunia</p>
-        <a href="#/stories" class="cta-button">
+        <a href="#/" class="cta-button">
           <i class="fas fa-compass"></i> Jelajahi Cerita
         </a>
       </div>

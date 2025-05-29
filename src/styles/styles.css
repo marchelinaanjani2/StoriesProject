@@ -390,3 +390,79 @@ main {
 #main-content {
   min-height: 200px;
 }
+
+
+.notification-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.notification-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notification-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.notification-buttons button#btn-unsubscribe {
+  background-color: #dc3545;
+}
+
+.notification-buttons button#btn-unsubscribe:hover {
+  background-color: #a71d2a;
+}
+
+#install-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  padding: 12px 20px;
+  background-color: #72c31b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#install-btn:hover {
+  background-color: #bff087;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* jarak antar tombol */
+    align-items: center; 
+}
+
+
+.story-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
