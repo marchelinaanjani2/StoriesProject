@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berbagi Cerita - Story Sharing App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+    <header>
+        <nav role="navigation" aria-label="Navigasi utama">
+            <div class="logo">
+                <i class="fas fa-book-open"></i> Berbagi Cerita
+            </div>
+            <ul class="nav-links">
+                <li><a href="#/" class="nav-link active">
+                        <i class="fas fa-home"></i> Beranda
+                    </a></li>
+                <li><a href="#/about" class="nav-link">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a></li>
+                <li><a href="#/add" class="nav-link">
+                        <i class="fas fa-plus"></i> Tambah Cerita
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+    </main>
+
+    <div id="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>Memuat...</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+
+</html>
